@@ -3,75 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghanaian Cuisines</title>
+    <title>Agrihub - Sustainable Agriculture</title>
     <link rel="stylesheet" href="landing.css">
 </head>
 <body>
-    <div class="main">
-        <header>
-            <img src="../Images/Logo.png" alt="Logo" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li class="has-dropdown">
-                        <a href="#">Projects</a>
-                        <ul class="dropdown">
-                            <li><a href="#">Gallery</a></li>
-                            <li><a href="#">Gallery Details</a></li>
-                        </ul>
-                    </li>
-                     <li><a href="">Blog</a></li>
-                     <li><a href="">Pages</a></li>
-                     <li><a href="">Contacts</a></li>
-                </ul>
-                <button>Get A Quote</button>
-            </nav>
-        </header>
-    </div>
-    
 
-    <section class="section-2">
-             <h4>Best Farming</h4>
-            <p><strong>Discover the</strong> art of gardening</p>
-            <p>We have been operating for over a decade.<br> Providing top-notch services to our clients <br>and building a strong track record in the industry </p>
-            <button>Read More</button>
-            <button>Watch a Video</button>
+    <!--Header Navigation -->
+    <header class="header">
+        <div class="nav">
+            <a href="#home" class="logo-link">
+                <img src="../Images/Logo.png" alt="Agrihub Logo" class="logo">
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <a href="#contacts" class="btn btn-primary">Get A Quote</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-label">BEST FARMING</span>
+                    <h1><span>Discover</span> the Art of Gardening</h1>
+                    <p>
+                        We have been operating for over a decade, providing top-notch services to our clients and building a strong track record in the industry.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#services" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="..//Images/who-s-denilo-xj7HV0FvSg0-unsplash.jpg" alt="A cheerful farmer">
+                </div>
+            </div>
         </section>
 
-
-
-     <section class="services">
+        <!-- Services Section -->
+        <section id="services" class="services">
             <div class="services-header">
-                <h5>Our Services</h5>
-                <h1>Nourishing the world from seed to table</h1>
+                <h5 class="section-label">Our Services</h5>zzzz
+                <h2>Nourishing the world from seed to table</h2>
             </div>
 
-            <div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <img src="../Images/servicev3-1.jpg" alt="Green Grow Solutions">
+                    <div class="service-card-content">
+                        <h3>Green Grow Solutions</h3>
+                        <p>We provide organic farming services that promote sustainable agriculture and healthy food production.</p>
+                    </div>
+                </article>
 
-           <section class="service-cards">
-                <div class="service-card">
-                    <img src="../Images/servicev3-1.jpg" alt="Service 1">
-                    <h3>Green Grow Solutions</h3>
-                    <p>We provide organic farming services that promote sustainable agriculture and healthy food production.</p>
-                </div>
+                <article class="service-card">
+                    <img src="../Images/servicev3-2.jpg" alt="Harvest Tech Services">
+                    <div class="service-card-content">
+                        <h3>Harvest Tech to Farm Services</h3>
+                        <p>Our crop management services ensure optimal growth and yield for various crops, using advanced techniques.</p>
+                    </div>
+                </article>
 
-                <div class="service-card">
-                    <img src="../Images/servicev3-2.jpg" alt="Service 2">
-                    <h3>Harvest Tech to Farm to Farm Services</h3>
-                    <p>Our crop management services ensure optimal growth and yield for various crops, using advanced techniques.</p>
-                </div>
-
-                <div class="service-card">
-                    <img src="../Images/servicev3-3.jpg" alt="Service 3">
-                    <h3>AgriPro Consulting</h3>
-                    <p>We offer comprehensive soil testing services to help farmers understand soil health and improve crop productivity.</p>
-                </div>
-            </section>
-
-           </section>
+                <article class="service-card">
+                    <img src="../Images/servicev3-3.jpg" alt="AgriPro Consulting">
+                    <div class="service-card-content">
+                        <h3>AgriPro Consulting</h3>
+                        <p>We offer comprehensive soil testing services to help farmers understand soil health and improve crop productivity.</p>
+                    </div>
+                </article>
             </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1595974482597-4b8da8879bc5?q=80&w=800&auto=format&fit=crop" alt="Agrihub Commercial Farming">
+                </div>
+                <div class="about-content">
+                    <h5 class="section-label">About Agrihub</h5>
+                    <h2>Rooted in Excellence, Growing for the Future</h2>
+                    <p>Agrihub is dedicated to empowering commercial and local farmers with modern agricultural innovations, precision soil analysis, and eco-friendly farming techniques. Over 10 years of experience driving sustainable yield improvements.</p>
+
+                    <ul class="features-list">
+                        <li>100% Organic & Eco-Friendly Agricultural Practices</li>
+                        <li>Advanced Soil Analytics & Irrigation Management</li>
+                        <li>Certified Agronomists & Field Support Experts</li>
+                    </ul>
+                    <a href="#services" class="btn btn-primary">Learn More About Agrihub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects / Gallery Section -->
+        <section id="projects" class="projects green-section">
+            <div class="section-header">
+                <h5 class="section-label">Our Projects & Gallery</h5>
+                <h2>A Showcase of Agricultural Innovation & Fieldwork</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=600&auto=format&fit=crop" alt="Organic Vegetable Cultivation">
+                    <div class="project-card-content">
+                        <h3>Organic Veggie Farm</h3>
+                        <p>Crop Production</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=600&auto=format&fit=crop" alt="Smart Irrigation System">
+                    <div class="project-card-content">
+                        <h3>Precision Irrigation</h3>
+                        <p>Farm Tech</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=600&auto=format&fit=crop" alt="Climate-Controlled Greenhouse">
+                    <div class="project-card-content">
+                        <h3>Greenhouse Tech</h3>
+                        <p>Agri-Tech</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?q=80&w=600&auto=format&fit=crop" alt="Commercial Fruit Orchard">
+                    <div class="project-card-content">
+                        <h3>High-Yield Orchard</h3>
+                        <p>Fruit Farming</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="section-header">
+                <h5 class="section-label">Latest Agricultural News</h5>
+                <h2>Insights, Farming Tips & Soil Health Strategies</h2>
+            </div>
+            <div class="blog-cards">
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1574943320219-553eb213f72d?q=80&w=600&auto=format&fit=crop" alt="Modern Crop Management">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="date">Oct 24, 2026</span> | <span class="author">By Agronomy Team</span>
+                        </div>
+                        <h3>Optimizing Crop Rotation for Maximum Soil Yield</h3>
+                        <p>Learn how strategic crop rotation restores natural nitrogen levels and reduces reliance on synthetic fertilizers.</p>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?q=80&w=600&auto=format&fit=crop" alt="Smart Drip Irrigation">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="date">Oct 18, 2026</span> | <span class="author">By Agrihub Tech</span>
+                        </div>
+                        <h3>Sustainable Water Management in Dry Seasons</h3>
+                        <p>Deploying smart drip irrigation networks to cut water consumption by up to 40% while preserving crop hydration.</p>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=600&auto=format&fit=crop" alt="Soil Testing & Analysis">
+                    <div class="blog-card-content">
+                        <div class="blog-meta">
+                            <span class="date">Oct 05, 2026</span> | <span class="author">By Soil Specialist</span>
+                        </div>
+                        <h3>Why Soil Testing Is the Best Investment Before Planting</h3>
+                        <p>Understanding pH levels, micronutrient balances, and organic content before investing in seeds.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contacts" class="footer">
+        <div class="footer-top">
+            <div class="footer-col">
+                <img src="../Images/Logo.png" alt="Agrihub Logo" class="footer-logo">
+                <p>Empowering agricultural enterprises with modern technology, sustainable farming solutions, and expert consultation.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Agrihub</a></li>
+                    <li><a href="#services">Our Services</a></li>
+                    <li><a href="#projects">Projects & Gallery</a></li>
+                    <li><a href="#blog">Agri News</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contact Us</h4>
+                <p>📍 Tamale, Northern Region, Ghana</p>
+                <p>📞 +233 24 000 0000</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Agrihub Newsletter</h4>
+                <p>Subscribe for seasonal planting updates and agricultural industry insights.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Agrihub Agricultural Solutions. All Rights Reserved.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
