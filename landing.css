@@ -1383,3 +1383,137 @@ section p {
         height: 190px;
     }
 }
+
+/* ========================================
+   RESPONSIVE — FINAL LAYOUT SAFEGUARDS
+======================================== */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.nav,
+.hero-content,
+.about-grid,
+.services-grid,
+.projects-grid,
+.blog-cards {
+    min-width: 0;
+}
+
+.hero-text,
+.about-content,
+.service-card,
+.project-card,
+.blog-card,
+.footer-col {
+    min-width: 0;
+}
+
+@media (max-width: 900px) {
+    .nav {
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav nav {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .nav nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        width: max-content;
+        padding-bottom: 0.15rem;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image {
+        display: block;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 0.75rem 5%;
+    }
+
+    .nav {
+        justify-content: space-between;
+        gap: 0.75rem;
+    }
+
+    .logo {
+        height: 34px;
+    }
+
+    .nav > .btn-primary {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.68rem;
+        white-space: nowrap;
+    }
+
+    .hero {
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding: 4rem 5% 4.5rem;
+        gap: 2.5rem;
+    }
+
+    .hero h1 {
+        overflow-wrap: anywhere;
+    }
+
+    .hero p {
+        text-align: left;
+    }
+
+    .hero-image img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .section-label {
+        font-size: clamp(2rem, 12vw, 3.5rem);
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
+
+    .services,
+    .about,
+    .projects,
+    .green-section,
+    .blog-section {
+        padding: 4rem 5%;
+    }
+
+    .about-image {
+        box-shadow: 10px 10px 0 rgba(24, 84, 42, 0.12);
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+    }
+}
